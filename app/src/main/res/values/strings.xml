@@ -3,4 +3,5 @@
     <string name="submit">Submit</string>
     <string name="nama_lengkap">Nama lengkap</string>
     <string name="jenis_kelamin">JENIS KELAMIN</string>
+    <string name="alamat">Alamat</string>
 </resources>
