@@ -59,9 +59,8 @@ fun TampilData(
                     onClick = onBackBtnClick) {
                     Text(text = stringResource(id = R.string.back))
                 }
-                ) { }
+
             }
         }
-
     }
 }
