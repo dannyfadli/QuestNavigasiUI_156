@@ -1,9 +1,16 @@
 package com.example.navigation_mvvm.view
 
 import androidx.compose.foundation.layout.Arrangement
+
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
+import androidx.compose.material3.Button
+import androidx.compose.material3.DividerDefaults.Thickness
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.OutlinedTextField
@@ -35,7 +42,7 @@ fun FormIsian(
                     colorResource(id = R.color.teal_700))
             )}
     ){ isiRuang ->
-        Colomn(modifier = Modifier.padding( isiRuang),
+        Column(modifier = Modifier.padding( isiRuang),
             verticalArrangement = Arrangement.Top,
             horizontalAlignment = Alignment.CenterHorizontally){
             OutlinedTextField(
@@ -53,7 +60,7 @@ fun FormIsian(
             Row {
                 jenisK.forEach {
                     item ->
-                    Row (verticalAlignment = Alignment.CenterHorizontally){
+                    Row (verticalAlignment = Alignment.CenterVertically){
                         RadioButton(
                             selected = false,
                             onClick = {item}
@@ -76,17 +83,14 @@ fun FormIsian(
                 label = {Text(text = "Alamat")},
                 onValueChange = {},
             )
-            s
+            Spacer(modifier = Modifier.height(30.dp))
+            Button(
+                modifier = Modifier.fillMaxWidth(1f)
+                    .padding(all = 25.dp),
+                onClick = OnSubmitBtnClick
+            ) {
+                Text(stringResource(R.string.submit))
+            }
         }
-
     }
-}
-
-@Composable
-fun Colomn(
-    modifier: Modifier,
-    verticalArrangement: Arrangement.Vertical,
-    horizontalAlignment: Alignment.Horizontal
-) {
-    TODO("Not yet implemented")
 }
