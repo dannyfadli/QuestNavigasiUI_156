@@ -1,6 +1,7 @@
 package com.example.navigation_mvvm.view
 
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
 import androidx.compose.material3.ExperimentalMaterial3Api
@@ -46,7 +47,14 @@ fun FormIsian(
                 onValueChange = {},
             )
             HorizontalDivider(modifier = Modifier
-            )
+                .padding(20.dp)
+                .width(250.dp), thickness = Thickness, color = Color.Red)
+            Row {
+                jenisK.forEach {
+                    item ->
+
+                }
+            }
         }
 
     }
