@@ -5,6 +5,6 @@
     <string name="nama_lengkap">Nama lengkap</string>
     <string name="jenis_kelamin">JENIS KELAMIN</string>
     <string name="alamat">Alamat</string>
-    <string name="email">Email</string>
+    <string name="tampil">Tampilan</string>
     <string name="home">Form Isian</string>
 </resources>
